@@ -471,10 +471,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 531814550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3064e1e3a2ecef54aa4d9d06878414e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d571e91ca5587748a8290892931adc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageView: {fileID: 1382870984}
 --- !u!114 &531814553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,10 +845,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 645205355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3064e1e3a2ecef54aa4d9d06878414e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d571e91ca5587748a8290892931adc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageView: {fileID: 444856190}
 --- !u!114 &645205358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1272,6 +1270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242055008}
   - component: {fileID: 1242055007}
+  - component: {fileID: 1242055009}
   m_Layer: 0
   m_Name: '[Menu]'
   m_TagString: Untagged
@@ -1309,6 +1308,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242055009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242055006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e223dd330bc59408dc5c36e8d42a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pages: []
+  menuButtons: []
+  m_CurrentPage: {fileID: 444856190}
 --- !u!1 &1382870982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,10 +1483,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666959151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3064e1e3a2ecef54aa4d9d06878414e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d571e91ca5587748a8290892931adc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageView: {fileID: 0}
 --- !u!114 &1666959154
 MonoBehaviour:
   m_ObjectHideFlags: 0
