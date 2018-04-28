@@ -25,6 +25,7 @@ public class GetUser : MonoBehaviour {
                 Debug.Log("There is an error");
             }
 
+
             var jsonText = www.text;
             user = JsonUtility.FromJson<User>(jsonText);
             premiumUser = JsonUtility.FromJson<PremiumUser>(jsonText);
