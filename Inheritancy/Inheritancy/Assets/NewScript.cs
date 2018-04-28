@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewScript : MonoBehaviour {
-    //This is a new script, nothing has been added yet
+    Debug.Log("Hi Tin");
 }
