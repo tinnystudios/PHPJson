@@ -24,7 +24,6 @@ public class MenuController : MonoBehaviour {
         //We assigned ourself to MenuControllerStaticInstance
         Instance = this;
 
-        //Turn off all page view
         //Find all page views.
         PageView[] allPageViews = FindObjectsOfType<PageView>();
 
@@ -43,29 +42,5 @@ public class MenuController : MonoBehaviour {
     public static void GoToHomePage() {
         Instance.GoToPage(Instance.m_HomePage);
     }
-
-    /*
-    //This section is working.
-    public void OpenHomePage() {
-        m_CurrentPage.gameObject.SetActive(false);
-        m_CurrentPage = m_HomePage;
-        m_CurrentPage.gameObject.SetActive(true);
-    }
-
-    //I have not fix up this section
-    public void OpenGamePage() {
-        m_CurrentPage.gameObject.SetActive(false);
-        m_CurrentPage = m_GamePage;
-        m_CurrentPage.gameObject.SetActive(true);
-    }
-
-    //I have not fix up this section
-    public void OpenAboutPage()
-    {
-        m_CurrentPage.gameObject.SetActive(false);
-        m_CurrentPage = m_AboutPage;
-        m_CurrentPage.gameObject.SetActive(true);
-    }
-    */
 
 }

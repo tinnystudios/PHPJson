@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 444856189}
   - component: {fileID: 444856190}
   m_Layer: 5
-  m_Name: HomePage
+  m_Name: 0_HomePage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 531814555}
   - component: {fileID: 531814552}
   m_Layer: 5
-  m_Name: GameButton
+  m_Name: 1_GameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -812,7 +812,7 @@ GameObject:
   - component: {fileID: 645205360}
   - component: {fileID: 645205357}
   m_Layer: 5
-  m_Name: HomeButton
+  m_Name: 0_HomeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,8 +1131,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444856189}
-  - {fileID: 1382870983}
   - {fileID: 1151643811}
+  - {fileID: 1382870983}
   m_Father: {fileID: 435047852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1225,7 +1225,7 @@ GameObject:
   - component: {fileID: 1151643811}
   - component: {fileID: 1151643810}
   m_Layer: 5
-  m_Name: AboutPage
+  m_Name: 1_AboutPage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,7 +1254,7 @@ RectTransform:
   m_Children:
   - {fileID: 291725506}
   m_Father: {fileID: 799287606}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1269,7 +1269,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1242055008}
-  - component: {fileID: 1242055007}
   - component: {fileID: 1242055009}
   m_Layer: 0
   m_Name: '[Menu]'
@@ -1278,21 +1277,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1242055007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1242055006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd847f2ebe1a5d94d8ab6b03b28019f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HomePage: {fileID: 444856190}
-  m_GamePage: {fileID: 1382870984}
-  m_AboutPage: {fileID: 1151643810}
-  m_CurrentPage: {fileID: 444856190}
 --- !u!4 &1242055008
 Transform:
   m_ObjectHideFlags: 0
@@ -1332,7 +1316,7 @@ GameObject:
   - component: {fileID: 1382870983}
   - component: {fileID: 1382870984}
   m_Layer: 5
-  m_Name: GamePage
+  m_Name: 2_GamePage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1350,7 +1334,7 @@ RectTransform:
   m_Children:
   - {fileID: 1551675256}
   m_Father: {fileID: 799287606}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1450,7 +1434,7 @@ GameObject:
   - component: {fileID: 1666959156}
   - component: {fileID: 1666959153}
   m_Layer: 5
-  m_Name: AboutButton
+  m_Name: 2_AboutButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
