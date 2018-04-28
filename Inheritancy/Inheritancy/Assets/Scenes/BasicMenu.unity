@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3064e1e3a2ecef54aa4d9d06878414e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageView: {fileID: 1382870984}
+  pageToOpen: {fileID: 1382870984}
 --- !u!114 &531814553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3064e1e3a2ecef54aa4d9d06878414e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageView: {fileID: 444856190}
+  pageToOpen: {fileID: 444856190}
 --- !u!114 &645205358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1290,9 +1290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd847f2ebe1a5d94d8ab6b03b28019f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HomePage: {fileID: 444856190}
-  m_GamePage: {fileID: 1382870984}
-  m_AboutPage: {fileID: 1151643810}
   m_CurrentPage: {fileID: 444856190}
 --- !u!4 &1242055008
 Transform:
@@ -1473,7 +1470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3064e1e3a2ecef54aa4d9d06878414e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pageView: {fileID: 0}
+  pageToOpen: {fileID: 1151643810}
 --- !u!114 &1666959154
 MonoBehaviour:
   m_ObjectHideFlags: 0

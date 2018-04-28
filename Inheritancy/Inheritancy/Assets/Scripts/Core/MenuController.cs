@@ -6,32 +6,42 @@ public class MenuController : MonoBehaviour {
 
     //Static Menu Controller
     public static MenuController Instance;
-
-    public PageView m_HomePage;
-    public PageView m_GamePage;
-    public PageView m_AboutPage;
-
-    public PageView m_CurrentPage; //Active Page
+    //Active Page
+    public PageView m_CurrentPage;
 
     //Calls at the start of the object
-    private void Start()
+    private void Awake()
     {
-        //If another instance exist and it is not me, destroy myself
-        if (Instance != null && Instance != this) {
-            Destroy(Instance.gameObject);
-        }
+        ProcessSingleton();
+        InitializePages();
+    }
 
-        //We assigned ourself to MenuControllerStaticInstance
-        Instance = this;
-
-        //Turn off all page view
+    public void InitializePages() {
         //Find all page views.
         PageView[] allPageViews = FindObjectsOfType<PageView>();
 
-        //Loop through all elements of allPageViews
-        for (int i = 0; i < allPageViews.Length; i++) {
+        //Deactivate pages
+        for (int i = 0; i < allPageViews.Length; i++)
+        {
             allPageViews[i].gameObject.SetActive(false);
         }
+
+        //Run first page if it exists
+        if (m_CurrentPage != null)
+        {
+            GoToPage(m_CurrentPage);
+        }
+    }
+
+    public void ProcessSingleton() {
+        //If another instance exist and it is not me, destroy myself
+        if (Instance != null && Instance != this)
+        {
+            Destroy(Instance.gameObject);
+        }
+
+        //Assign instance to this
+        Instance = this;
     }
 
     public void GoToPage(PageView page) {
@@ -39,33 +49,5 @@ public class MenuController : MonoBehaviour {
         m_CurrentPage = page;
         m_CurrentPage.gameObject.SetActive(true);
     }
-
-    public static void GoToHomePage() {
-        Instance.GoToPage(Instance.m_HomePage);
-    }
-
-    /*
-    //This section is working.
-    public void OpenHomePage() {
-        m_CurrentPage.gameObject.SetActive(false);
-        m_CurrentPage = m_HomePage;
-        m_CurrentPage.gameObject.SetActive(true);
-    }
-
-    //I have not fix up this section
-    public void OpenGamePage() {
-        m_CurrentPage.gameObject.SetActive(false);
-        m_CurrentPage = m_GamePage;
-        m_CurrentPage.gameObject.SetActive(true);
-    }
-
-    //I have not fix up this section
-    public void OpenAboutPage()
-    {
-        m_CurrentPage.gameObject.SetActive(false);
-        m_CurrentPage = m_AboutPage;
-        m_CurrentPage.gameObject.SetActive(true);
-    }
-    */
 
 }

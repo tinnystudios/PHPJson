@@ -5,10 +5,10 @@ using UnityEngine.EventSystems;
 
 public class MenuButton : MonoBehaviour, IPointerClickHandler
 {
-    public PageView pageView;
+    public PageView pageToOpen;
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        MenuController.Instance.GoToPage(pageView);
+        MenuController.Instance.GoToPage(pageToOpen);
     }
 }
