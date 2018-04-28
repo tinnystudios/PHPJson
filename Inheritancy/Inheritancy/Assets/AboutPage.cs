@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewScript : MonoBehaviour {
-    Debug.Log("Hi Tin");
+public class AboutPage : PageView {
+
 }
